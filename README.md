@@ -43,7 +43,7 @@ These steps assume that you're creating a brand new repository.
 After following these steps your resume will be hosted on GitHub Pages. If you run into issues please refer to the [FAQ](#faq)
 #### Customization
 
-Customizing your GitHub Pages site can be simple or become incredibly complex. The reason being is that GitHub Pages uses Jekyll, a tool used to create static websites. How your site looks can be changed by using Jekyll, but alas, I won't cover that here. If you want to know more I recommend checking out the Jekyll tutorials in the [more resources section](#more-resources).
+Customizing your GitHub Pages site can be simple or become incredibly complex. The reason being is that GitHub Pages uses Jekyll, a tool used to create static websites. How your site looks can be changed by using Jekyll, but alas, I won't cover that here. If you want to know more I recommend checking out the Jekyll tutorial in the [more resources section](#more-resources).
 
 However, GitHub Pages comes with some built-in Jekyll templates to change the style and layout of your site. To do this:
 
@@ -52,6 +52,12 @@ However, GitHub Pages comes with some built-in Jekyll templates to change the st
 2. Scrolling down, find the **GitHub Pages** section and click **Change theme**
 
 3. Choose a theme from the list and then press **Select theme**
+
+It may take a few minutes for your site to change themes.
+
+![](customize.gif)
+
+After following these steps you will notice that a `_config.yml` file is added to your repository. This is a file used by Jekyll to define which theme should be used.
 
 #### More Resources
 

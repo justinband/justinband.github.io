@@ -1,7 +1,8 @@
 # Hosting a Resume on GitHub Pages
 
 ## Purpose
-Describe and use the concepts outlined in Andrew Etter's book _Modern Technical Communication_ to host a resume on GitHub Pages.
+
+The purpose of this README is to describe and outline some methods that one can take to host their resume online. Over the course of the README you will learn about static-site generators, what makes good documentation, and why markdown is so darn good. Andrew Etter's book _Modern Technical Communication_ will prove as this guides "bible". 
 
 ## Prerequisites
 
@@ -9,7 +10,9 @@ Describe and use the concepts outlined in Andrew Etter's book _Modern Technical 
 
 - A GitHub account
 
-- Basic knowledge of Git
+- Basic knowledge of GitHub
+
+- Basic command line navigation
 
 ## Instructions
 
@@ -19,26 +22,42 @@ The following steps can be found at the [GitHub Pages website](https://pages.git
 
 These steps assume that you're creating a brand new repository.
 
-1. Create a public repository on GitHub named `username.github.io` where "username" is your actual GitHub username. For example, my repository is called `justinband.github.io`.
+1. Create a public repository on GitHub.
+
+    * Name your repository `username.github.io` where "username" is your actual GitHub username. For example, my repository is called `justinband.github.io`. Ensure that it is a public repository.
+
+    * You may ask, "Why use git?". The reason we use Git is because it's a powerful tool used for distributed version-control. This means that you can host and maintain files on an online repository (in our case this is on GitHub) and be able to see previous versions of those files. Git allows many people to work on the same project at once.
+    <br/>
 
 2. Using a command line, clone the repository:
 
     ```
     git clone https://github.com/username/username.github.io
     ```
-3. Copy your resume into the repository folder.
+
+3. Create an `index.md` file.
     
-4. Change the name of your resume to `index.md`. If preferred, `index.html` will also work.
+    * `index.md` will be your resume formatted in markdown. _This name is important._ This `index.md` file is what GitHub Pages will render to the static-site.
 
-5. Use Git to push your resume (`index.md`) to GitHub
+    * Create this file in your local copy of the repository.
 
+    * Why are we using markdown? 
+    <br/>
+
+4. Get `index.md` into your GitHub repository
+
+    * Git commands will commit, and then push your file into your online GitHub repository.
+
+    * In a command line, navigate to your local repository.
+
+    * Next, run the following commands.
     ```
     git add *
     git commit -m "Added index.md"
     git push -u origin master
     ```
 
-6. In a browser, go to `https://username.github.io`.
+5. In a browser, go to `https://username.github.io`.
 
 After following these steps your resume will be hosted on GitHub Pages. If you run into issues please refer to the [FAQ](#faq)
 #### Customization
@@ -76,4 +95,4 @@ Why is Markdown better than a word processor?
 Why is my resume not showing up?
 - It can be a few things:
     - Ensure that the filename of your resume is `index.md` or `README.md`. GitHub Pages prioritizes displaying `index.md` (`index.html` works too) so if you want a README your resume should be `index.md`.
-    - Ensure that the source for your GitHub Pages site is being built from the correct branch. This option can be found in the **GitHub Pages** section of your repository settings.
+    - Ensure that the source for your GitHub Pages site is being built from the correct branch. This option can be found in the **GitHub Pages** section of your repository settings.Change the name of your resume to `index.md`. If preferred, `index.html` will also work.

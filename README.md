@@ -1,5 +1,4 @@
 # Hosting a Resume on GitHub Pages
----
 
 ## Audience (TAKE OUT TAKE OUT)
 
@@ -53,7 +52,7 @@ These steps assume that you're creating a brand new repository.
     ```
 
     * The command line is an easy way to perform tasks that would take longer with a GUI.
-    
+
 3. Create an `index.md` file.
     
     * `index.md` will be your resume formatted in markdown. _This name is important._ This `index.md` file is what GitHub Pages will render to the static-site.

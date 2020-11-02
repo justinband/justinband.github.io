@@ -1,11 +1,13 @@
 # Justin Band
 ---
 
-jstinband@gmail.com
-github.com/justinband
+## Contact
+* jstinband@gmail.com
+* github.com/justinband
 
-Bachelor of Science - Computer Science Major (Co-op)
-University of Manitoba - Graduation: April 2021
+## Education 
+* Bachelor of Science - Computer Science Major (Co-op)
+    * University of Manitoba - Graduation: April 2021
 
 ## Technical Experience
 
@@ -54,9 +56,9 @@ University of Manitoba - Graduation: April 2021
 
 ## Extracurricular Activities
 
-Bouldering
-Bassist, _Winnipeg band 'Six-Foot Citrus'_
-Outreach Ambassador, _University of Manitoba Open House_
-Handmade Village Volunteer, _Winnipeg Folk Festival_
-Volunteer Judge, _High School Programming day_
-Demonstrator, _University of Manitoba's Science Rendezvous_
+* Bouldering
+* Bassist, _Winnipeg band 'Six-Foot Citrus'_
+* Outreach Ambassador, _University of Manitoba Open House_
+* Handmade Village Volunteer, _Winnipeg Folk Festival_
+* Volunteer Judge, _High School Programming day_
+* Demonstrator, _University of Manitoba's Science Rendezvous_

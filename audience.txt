@@ -1,0 +1,7 @@
+Audience: CS Student
+Venue: README in GitHub Pages
+Prupose: Explain how to host a resume on GitHub Pages
+Additional purpose: Introduce and demo principles of Andrew Etter's book _Modern Technical Writing_
+Desired Reaction: Student gains interest in static websites.
+Vocabulary: Idiomatic, Informal, Readable
+Tone: Welcoming, Knowledgable

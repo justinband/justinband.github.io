@@ -1,18 +1,10 @@
 # Hosting a Resume on GitHub Pages
 
-## Audience (TAKE OUT TAKE OUT)
-
-Audience: CS Student
-Venue: README in GitHub Pages
-Prupose: Explain how to host a resume on GitHub Pages
-Additional purpose: Introduce and demo principles of Andrew Etter's book _Modern Technical Writing_
-Desired Reaction:
-Vocabulary:
-Tone:
+![](resume.gif)
 
 ## Purpose
 
-The purpose of this README is to describe and outline some methods that one can take to host their resume online. Over the course of the README you will learn about static-site generators, what makes good documentation, and why markdown is so darn good. Andrew Etter's book _Modern Technical Communication_ will prove as this guides "bible". 
+You will acquire the skills to host a resume online using GitHub Pages and Markdown. Furthermore, you will learn about static-site generators, why Git is an amazing tool, and why markdown is so darn good.
 
 ## Summary
 
@@ -30,19 +22,19 @@ The purpose of this README is to describe and outline some methods that one can 
 
 - Basic knowledge of GitHub
 
-- Basic command line navigation
+- Some command line experience
 
-## Setup
+## Instructions
 
-The following steps are based on the steps provided at the [GitHub Pages website](https://pages.github.com/).
+The following steps are based on the GitHub Pages [website](https://pages.github.com/).
 
-These steps assume that you're creating a brand new repository.
+If you run into issues, refer to the [FAQ](#faq).
 
-1. Create a public repository on GitHub.
+#### 1. Creating and Cloning a GitHub Repository
 
-    * Name your repository `username.github.io` where "username" is your actual GitHub username. For example, my repository is called `justinband.github.io`.
+1. Create a public repository on GitHub named `username.github.io`. Ensure `username` is your GitHub username. 
 
-    * You may ask, "Why use git?". The reason we use Git is because it's a powerful tool used for distributed version-control. This means that you can host and maintain files on an online repository (in our case this is on GitHub) and be able to see previous versions of those files. Git allows many people to work on the same project at once.
+    * For example, this repository is called `justinband.github.io`.
     <br/>
 
 2. Using a command line, clone the repository. 
@@ -50,40 +42,44 @@ These steps assume that you're creating a brand new repository.
     ```
     git clone https://github.com/username/username.github.io
     ```
+    * This will copy the online repository to your local files.
+    * The command line is a quicker way to execute tasks that would take a long time  with a GUI.
 
-    * The command line is an easy way to perform tasks that would take longer with a GUI.
+The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintaind in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do it all for you with little hassle.
 
-3. Create an `index.md` file.
-    
-    * `index.md` will be your resume formatted in markdown. _This name is important._ This `index.md` file is what GitHub Pages will render to the static-site.
+#### 2. Adding a Resume to the Repository
 
+1. Create an `index.md` file.
     * Create this file in your local copy of the repository.
+    
+    * `index.md` will be your resume formatted in markdown. 
+        * **_This name is important._** 
 
-    * Why are we using markdown? 
+    * GitHub Pages first wants to render a file named `index.md`. If no such file exists, GitHub Pages will then render `README.md`. If neither files exist, GitHub Pages will not render anything.
     <br/>
 
-4. Get `index.md` into your GitHub repository
+2. Push `index.md` to your GitHub repository
 
-    * Git commands will commit, and then push your file into your online GitHub repository.
-
-    * In a command line, navigate to your local repository.
-
-    * Next, run the following commands.
+    * In a command line, navigate to your local repository and then run the following commands.
     ```
     git add *
     git commit -m "Added index.md"
     git push -u origin master
     ```
 
-5. In a browser, go to `https://username.github.io`.
+Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a webite hosting a resume. Additionally, using these tools with Git allows for Markdown files be easily managed, versioned, and tracked.
 
-After following these steps your resume will be hosted on GitHub Pages. If you run into issues please refer to the [FAQ](#faq)
+#### 3. Launching the Website
+
+* In a browser, go to `https://username.github.io`. `username` being your GitHub username.
+
+As Etter says, building a website like the one in this README is an easy of distributing a variety of information. Instead of sending out paper resumes (which is so 2010) a website makes a resume easily accessible to anybody, anywhere, all the time.
 
 ## Customization
 
-Customizing your GitHub Pages site can be simple or become incredibly complex. The reason being is that GitHub Pages uses Jekyll, a tool used to create static websites. How your site looks can be changed by using Jekyll, but alas, I won't cover that here. If you want to know more I recommend checking out the Jekyll tutorial in the [more resources section](#more-resources).
+![](customize.gif)
 
-However, GitHub Pages comes with some built-in Jekyll templates to change the style and layout of your site. To do this:
+GitHub Pages comes with some built-in Jekyll templates to change the style and layout of your site. To do this:
 
 1. Go to the repository settings
 
@@ -93,18 +89,19 @@ However, GitHub Pages comes with some built-in Jekyll templates to change the st
 
 It may take a few minutes for your site to change themes.
 
-![](customize.gif)
-
-After following these steps you will notice that a `_config.yml` file is added to your repository. This is a file used by Jekyll to define which theme should be used.
+Customizing your GitHub Pages site can be simple or become incredibly complex. The reason being is that GitHub Pages uses Jekyll, a tool used to create static websites. How your site looks can be changed by using Jekyll, but alas, that won't be covered here. If you want to know more, check out the Jekyll tutorial in [More Resources](#more-resources).
 
 ## More Resources
 
-- There are a variety of markdown tutorials online, however, I recommend this [one](https://www.markdowntutorial.com/)
-
 - [Andrew Etter's _Modern Technical Writing: An Introduction to Software Documentation_](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
+- [Markdown tutorial](https://www.markdowntutorial.com/)
 
 - [Jekyll tutorial](https://jekyllrb.com/tutorials/video-walkthroughs/)
 ## Authors and Acknowledgments
+
+This project uses the [Cayman Jekyll theme](https://github.com/pages-themes/cayman).
+
+Discussions in the README are bolstered by the book, _Modern Technical Writing_ by Andrew Etter.
 
 ## FAQ
 
@@ -114,8 +111,16 @@ _Why is Markdown better than a word processor?_
 _Why is my resume not showing up?_
 - It can be a few things:
     - Ensure that the filename of your resume is `index.md` or `README.md`. GitHub Pages prioritizes displaying `index.md` (`index.html` works too) so if you want a README your resume should be `index.md`.
-    - Ensure that the source for your GitHub Pages site is being built from the correct branch. This option can be found in the **GitHub Pages** section of your repository settings.Change the name of your resume to `index.md`. If preferred, `index.html` will also work.
+    - Ensure that the source for your GitHub Pages site is being built from the correct branch. This option can be found in the **GitHub Pages** section of your repository settings. Change the name of your resume to `index.md`. If preferred, `index.html` will also work.
 
 _Why am I using Git for this?_
 
-- Yes, I know, it's only a static page. A file could be uploaded and that's that. However, as outlined in Etter's book, Git has quickly become the standard version-control tool for software and documentation management. Git brings many benefits. In terms of documentation, Git reduces reliance on the traditional documentation approach and can allow the users themselves can make changes to the documentation (assuming the Git repository is public). All in all, Git usage is good practice.
+- Yes, this is only a static page. Instead, a file could be updated on the webiste and that's that. However, as outlined in Etter's book, using Git to manage files has many benefits. It allows for offline work and enables teams to concurrently work on the same project. In terms of documentation, Etter says that technical writers should use Git because developers generally like it more than other methods.
+
+_What are the benefits of static websites over traditional websites?_
+
+- Traditional websites built using Angular, React, or any other web language, all require expertise. Also, there may be databases, a server, or dependencies required. In contrast, static websites are fast and simple to get started as they require minimal overhead and have low coupling to other web technologies. Moreover, static websites provide a base level of setup, just enough for a website to look good. In comparison to Angular, the developer would need to create _everything_. Complexity in static sites only arise when the theme is manually edited.
+
+_Can I use a wiki instead?_
+
+- Definitely! Compared to static websites, wikis are a breeze. There is negligible overhead, they don't require a repository, and are easy to edit. The startup process for wikis is incredible. But, like most things in software, there are drawbacks. The most glaring one being that internet access is always required when editing a wiki. With static websites and Git everything, will always be editable on your local machine.

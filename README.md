@@ -30,15 +30,18 @@ The following steps are based on the GitHub Pages [website](https://pages.github
 
 If you run into issues, refer to the [FAQ](#faq).
 
-#### 1. Creating and Cloning a GitHub Repository
+#### Step 1. Creating a GitHub Repository
 
-1. Create a public repository on GitHub named `username.github.io`. Ensure `username` is your GitHub username. 
+Creating a repository will take place on the GitHub landing page, _after_ you have logged in.
 
-    * For example, this repository is called `justinband.github.io`.
-    <br/>
-
-2. Clone the repository. 
-    * In a command line, run the following:
+1. Press the green **New** button.
+2. Make the **Repository name**, `username.github.io`
+    - Ensure `username` is your GitHub username.
+3. Ensure **Public** is checked
+4. Click the green **Create repository** button.
+#### Step 2. Cloning a GitHub Repository
+ 
+1. In a command line, run the following:
     ```
     git clone https://github.com/username/username.github.io
     ```
@@ -47,11 +50,9 @@ If you run into issues, refer to the [FAQ](#faq).
 
 The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintained in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do it all for you with little hassle.
 
-#### 2. Adding a Resume to the Repository
-
-Your resume should be named `index.md`. **This exact name is important**
-
-1. Create `index.md` in the local repository.
+#### Step 3. Adding a Resume to the Repository
+ 
+1. Create a `index.md` file in the local repository.
     * This file is your resume formatted in markdown.
     <br/>
 
@@ -64,27 +65,34 @@ Your resume should be named `index.md`. **This exact name is important**
     git push -u origin master
     ```
 
+Your resume should be named `index.md`. **This exact name is important**
+
 Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a website hosting a resume. Additionally, using these tools with Git allows for Markdown files to be easily managed, versioned, and tracked.
 
-#### 3. Launching the Website
+#### Step 4. Launching the Website
 
-* In a browser, go to `https://username.github.io`. `username` being your GitHub username.
+1. In a browser, go to `https://username.github.io`.
+    * Again, `username` being your GitHub username.
 
 As Etter says, building a website like the one in this README is an easy way of distributing a variety of information. Instead of sending out paper resumes (which is so 2010) a website makes a resume easily accessible to anybody, anywhere, all the time.
 
 ## Customization
 
-![](customize.gif)
-
 GitHub Pages comes with some built-in Jekyll templates to change the style and layout of your site. To do this:
 
-1. Go to the repository settings
+1. In your repository, click the **Settings** button
 
-2. Scrolling down, find the **GitHub Pages** section and click **Change theme**
+2. Scrolling down, find the **GitHub Pages** section
 
-3. Choose a theme from the list and then press **Select theme**
+3. Click the **Change theme** button
 
-It may take a few minutes for your site to change themes.
+4. Choose a theme from the list
+
+5. Press the green **Select theme** button
+
+These steps can be seen in the gif below. It may take a few minutes for the theme changes to appear.
+
+![](customize.gif)
 
 Customizing your GitHub Pages site can be simple or become incredibly complex. The reason being is that GitHub Pages uses Jekyll, a tool used to create static websites. How your site looks can be changed by using Jekyll, but alas, that won't be covered here. If you want to know more, check out the Jekyll tutorial in [More Resources](#more-resources).
 
@@ -96,9 +104,11 @@ Customizing your GitHub Pages site can be simple or become incredibly complex. T
 - [Jekyll tutorial](https://jekyllrb.com/tutorials/video-walkthroughs/)
 ## Authors and Acknowledgments
 
-This project uses the [Cayman Jekyll theme](https://github.com/pages-themes/cayman).
+* This project uses the [Cayman Jekyll theme](https://github.com/pages-themes/cayman).
 
-Discussions in the README are bolstered by the book, _Modern Technical Writing_ by Andrew Etter.
+* Discussions in the README are bolstered by the book, _Modern Technical Writing_ by Andrew Etter.
+
+* Thanks to Adam Azarov, Tommy Wu, and Mostafa Kamal for peer editing this README.
 
 ## FAQ
 

@@ -37,43 +37,40 @@ If you run into issues, refer to the [FAQ](#faq).
     * For example, this repository is called `justinband.github.io`.
     <br/>
 
-2. Using a command line, clone the repository. 
-
+2. Clone the repository. 
+    * In a command line, run the following:
     ```
     git clone https://github.com/username/username.github.io
     ```
     * This will copy the online repository to your local files.
     * The command line is a quicker way to execute tasks that would take a long time  with a GUI.
 
-The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintaind in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do it all for you with little hassle.
+The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintained in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do it all for you with little hassle.
 
 #### 2. Adding a Resume to the Repository
 
-1. Create an `index.md` file.
-    * Create this file in your local copy of the repository.
-    
-    * `index.md` will be your resume formatted in markdown. 
-        * **_This name is important._** 
+Your resume should be named `index.md`. **This exact name is important**
 
-    * GitHub Pages first wants to render a file named `index.md`. If no such file exists, GitHub Pages will then render `README.md`. If neither files exist, GitHub Pages will not render anything.
+1. Create `index.md` in the local repository.
+    * This file is your resume formatted in markdown.
     <br/>
 
 2. Push `index.md` to your GitHub repository
 
-    * In a command line, navigate to your local repository and then run the following commands.
+    * In a command line, run the following:
     ```
     git add *
     git commit -m "Added index.md"
     git push -u origin master
     ```
 
-Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a webite hosting a resume. Additionally, using these tools with Git allows for Markdown files be easily managed, versioned, and tracked.
+Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a website hosting a resume. Additionally, using these tools with Git allows for Markdown files to be easily managed, versioned, and tracked.
 
 #### 3. Launching the Website
 
 * In a browser, go to `https://username.github.io`. `username` being your GitHub username.
 
-As Etter says, building a website like the one in this README is an easy of distributing a variety of information. Instead of sending out paper resumes (which is so 2010) a website makes a resume easily accessible to anybody, anywhere, all the time.
+As Etter says, building a website like the one in this README is an easy way of distributing a variety of information. Instead of sending out paper resumes (which is so 2010) a website makes a resume easily accessible to anybody, anywhere, all the time.
 
 ## Customization
 
@@ -106,20 +103,20 @@ Discussions in the README are bolstered by the book, _Modern Technical Writing_ 
 ## FAQ
 
 _Why is Markdown better than a word processor?_
-- Markdown is better than word processors at making fast and legible documents. Markdown files are flexible that can be easily converted to other widely used filetypes including: XML, HTML, and JSON. Moreover, these filetypes can be easily rendered by websites without the required overhead when using DOCX or PDF filetypes.
+- Markdown is better than word processors at making fast and legible documents. Markdown files are flexible that can be easily converted to other widely used file types including: XML, HTML, and JSON. Moreover, these file types can be easily rendered by websites without the required overhead when using DOCX or PDF file types.
 
 _Why is my resume not showing up?_
 - It can be a few things:
-    - Ensure that the filename of your resume is `index.md` or `README.md`. GitHub Pages prioritizes displaying `index.md` (`index.html` works too) so if you want a README your resume should be `index.md`.
-    - Ensure that the source for your GitHub Pages site is being built from the correct branch. This option can be found in the **GitHub Pages** section of your repository settings. Change the name of your resume to `index.md`. If preferred, `index.html` will also work.
+    - The filename of your resume must be either `index.md` or `README.md`. GitHub Pages prioritizes displaying `index.md`. If you want a README, your resume should be named `index.md`.
+    - Ensure the GitHub Pages site is being built from the correct source branch on GitHub. This option can be found in the **GitHub Pages** section of your repository settings.
 
 _Why am I using Git for this?_
 
-- Yes, this is only a static page. Instead, a file could be updated on the webiste and that's that. However, as outlined in Etter's book, using Git to manage files has many benefits. It allows for offline work and enables teams to concurrently work on the same project. In terms of documentation, Etter says that technical writers should use Git because developers generally like it more than other methods.
+- Yes, this is only a static page. Instead, a file could be updated on the website and that's that. However, as outlined in Etter's book, using Git to manage files has many benefits. It allows for offline work and enables teams to concurrently work on the same project. In terms of documentation, Etter says that technical writers should use Git because developers generally like it more than other methods.
 
 _What are the benefits of static websites over traditional websites?_
 
-- Traditional websites built using Angular, React, or any other web language, all require expertise. Also, there may be databases, a server, or dependencies required. In contrast, static websites are fast and simple to get started as they require minimal overhead and have low coupling to other web technologies. Moreover, static websites provide a base level of setup, just enough for a website to look good. In comparison to Angular, the developer would need to create _everything_. Complexity in static sites only arise when the theme is manually edited.
+- Traditional websites built using Angular, React, or any other web language, require a certain level expertise. Also, there may be databases, a server, or dependencies required. In contrast, static websites are fast and simple to get started as they require minimal overhead and have low coupling to other web technologies. Moreover, static websites provide a base level of setup, just enough for a website to look good. In comparison to Angular, the developer would need to create _everything_. For a static website, some complexity typically arises when the theme is manually edited.
 
 _Can I use a wiki instead?_
 

@@ -10,6 +10,10 @@ You will acquire the skills to host a resume online using GitHub Pages and Markd
 
 - [Prerequisites](#prerequisites)
 - [Instructions](#instructions)
+    - [Creating a Repository](#step-1-creating-a-repository)
+    - [Cloning a Repository](#step-2-cloning-a-repository)
+    - [Adding a Resume to a Repository](#step-3-adding-a-resume-to-a-repository)
+    - [Launching the Website](#step-4-launching-the-website)
 - [Customization](#customization)
 - [More Resources](#more-resources)
 - [Authors and Acknowledgements](#authors-and-acknowledgments)
@@ -29,7 +33,7 @@ The following steps are based on the GitHub Pages [website](https://pages.github
 
 If you run into issues, refer to the [FAQ](#faq).
 
-#### Step 1. Creating a GitHub Repository
+### Step 1. Creating a Repository
 
 Creating a repository will take place on the GitHub landing page, _after_ you have logged in.
 
@@ -39,7 +43,7 @@ Creating a repository will take place on the GitHub landing page, _after_ you ha
 3. Ensure **Public** is checked
 4. Click the green **Create repository** button.
 
-#### Step 2. Cloning a GitHub Repository
+### Step 2. Cloning a Repository
  
 1. In a command line, run the following:
     ```
@@ -50,7 +54,7 @@ Creating a repository will take place on the GitHub landing page, _after_ you ha
 
 The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintained in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do all version control behind the scenes for you. Etter adds that Git has a legitimate appeal as "documentation and code branches [can] stay in sync" and that "developers are more likely to contribute". All in all, Git makes it easy for many people to work on the same project while keeping track of past versions. 
 
-#### Step 3. Adding a Resume to the Repository
+### Step 3. Adding a Resume to a Repository
  
 1. Create an `index.md` file in the local repository.
     * **This file is your resume formatted in markdown.**
@@ -69,7 +73,7 @@ Your resume should be named `index.md`. This _exact_ name is important.
 
 Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Etter favours Markdown over XML for these reasons. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a website hosting a resume. Additionally, using these tools with Git allows for Markdown files to be easily managed, versioned, and tracked.
 
-#### Step 4. Launching the Website
+### Step 4. Launching the Website
 
 1. In a browser, go to `https://username.github.io`.
     * Again, `username` is your GitHub username.
@@ -108,7 +112,7 @@ Customizing your GitHub Pages site can be simple or become incredibly complex. T
 
 * Discussions in the README are bolstered by the book, _Modern Technical Writing_ by Andrew Etter.
 
-* Thanks to Adam Azarov, Tommy Wu, and Mostafa Kamal for peer editing this README.
+* Thanks to Adam Azarov, Tommy Wu, and Mostafa Kamal for providing feedback.
 
 ## FAQ
 

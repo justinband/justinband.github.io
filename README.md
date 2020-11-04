@@ -4,11 +4,12 @@
 
 ## Purpose
 
-You will acquire the skills to host a resume online using GitHub Pages and Markdown. Furthermore, you will learn about static-site generators, why Git is an amazing tool, and why markdown is so darn good.
+You will acquire the skills to host a resume online using GitHub Pages and Markdown. Furthermore, you will learn about static-site generators, Git, and why markdown is so darn good.
 
 ## Summary
 
-- [Setup](#setup)
+- [Prerequisites](#prerequisites)
+- [Instructions](#instructions)
 - [Customization](#customization)
 - [More Resources](#more-resources)
 - [Authors and Acknowledgements](#authors-and-acknowledgments)
@@ -19,8 +20,6 @@ You will acquire the skills to host a resume online using GitHub Pages and Markd
 - A resume formatted in markdown
 
 - A GitHub account
-
-- Basic knowledge of GitHub
 
 - Some command line experience
 
@@ -39,6 +38,7 @@ Creating a repository will take place on the GitHub landing page, _after_ you ha
     - Ensure `username` is your GitHub username.
 3. Ensure **Public** is checked
 4. Click the green **Create repository** button.
+
 #### Step 2. Cloning a GitHub Repository
  
 1. In a command line, run the following:
@@ -48,12 +48,12 @@ Creating a repository will take place on the GitHub landing page, _after_ you ha
     * This will copy the online repository to your local files.
     * The command line is a quicker way to execute tasks that would take a long time  with a GUI.
 
-The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintained in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do it all for you with little hassle.
+The reason Git is used is because it's a powerful tool used for distributed version-control. In brief, this means that files can be hosted and maintained in an online repository like GitHub. Furthermore, Git tracks previous versions of those files and catalogs the differences. Andrew Etter says that version control is "one of the most important functions of a technical writer" and Git will do all version control behind the scenes for you. Etter adds that Git has a legitimate appeal as "documentation and code branches [can] stay in sync" and that "developers are more likely to contribute". All in all, Git makes it easy for many people to work on the same project while keeping track of past versions. 
 
 #### Step 3. Adding a Resume to the Repository
  
-1. Create a `index.md` file in the local repository.
-    * This file is your resume formatted in markdown.
+1. Create an `index.md` file in the local repository.
+    * **This file is your resume formatted in markdown.**
     <br/>
 
 2. Push `index.md` to your GitHub repository
@@ -65,16 +65,16 @@ The reason Git is used is because it's a powerful tool used for distributed vers
     git push -u origin master
     ```
 
-Your resume should be named `index.md`. **This exact name is important**
+Your resume should be named `index.md`. This _exact_ name is important.
 
-Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a website hosting a resume. Additionally, using these tools with Git allows for Markdown files to be easily managed, versioned, and tracked.
+Markdown is one of many lightweight markup languages. By far, Markdown is the most used lightweight markup language as it is simple, human-readable, and free. Etter favours Markdown over XML for these reasons. Moreover, Markdown and other lightweight markup languages are easy ways to get content on a webpage. Most lightweight markup languages can be easily converted to HTML, which is subsequently used by web technologies to render the content. In terms of this guide, coordination between a static-site generator and a Markdown file can easily create a website hosting a resume. Additionally, using these tools with Git allows for Markdown files to be easily managed, versioned, and tracked.
 
 #### Step 4. Launching the Website
 
 1. In a browser, go to `https://username.github.io`.
-    * Again, `username` being your GitHub username.
+    * Again, `username` is your GitHub username.
 
-As Etter says, building a website like the one in this README is an easy way of distributing a variety of information. Instead of sending out paper resumes (which is so 2010) a website makes a resume easily accessible to anybody, anywhere, all the time.
+As Etter says, building a website like the one in this README is an easy way of distributing a variety of information. Furthermore, static websites provide fast and simple ways to get started as they require minimal overhead and have low coupling to other web technologies. Moreover, static websites provide a base level of setup, just enough for a website to look good. Static websites also make documents readily available. Instead of emailing PDFs or using snail mail to get documents to the users, static websites make documents easily accessible to anybody, anywhere, all the time.
 
 ## Customization
 
@@ -126,8 +126,4 @@ _Why am I using Git for this?_
 
 _What are the benefits of static websites over traditional websites?_
 
-- Traditional websites built using Angular, React, or any other web language, require a certain level expertise. Also, there may be databases, a server, or dependencies required. In contrast, static websites are fast and simple to get started as they require minimal overhead and have low coupling to other web technologies. Moreover, static websites provide a base level of setup, just enough for a website to look good. In comparison to Angular, the developer would need to create _everything_. For a static website, some complexity typically arises when the theme is manually edited.
-
-_Can I use a wiki instead?_
-
-- Definitely! Compared to static websites, wikis are a breeze. There is negligible overhead, they don't require a repository, and are easy to edit. The startup process for wikis is incredible. But, like most things in software, there are drawbacks. The most glaring one being that internet access is always required when editing a wiki. With static websites and Git everything, will always be editable on your local machine.
+- Traditional websites built using Angular, React, or any other web language, require a certain level expertise. Also, there may be databases, a server, or dependencies required. In comparison, static websites are a breeze. There are a variety of tutorials online, but static websites typically deal with the entire setup process. The user only needs to add files or modify existing files to change the content. With traditional web technologies, developers would need to create _everything_, which is a waste of time when a static website will do the job.
